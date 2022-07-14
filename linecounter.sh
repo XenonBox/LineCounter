@@ -11,6 +11,7 @@ https://github.com/dvf/blockchain
 # Download the repos:
 for repo in $repos_array
 do
+	# echo "Cloning $repo"
 	# if repo exist, it dont clone.
 	git clone --depth=1 $repo
 done
@@ -35,7 +36,7 @@ __list1=`find ./ -maxdepth 1 -type d`
 # Count Lines in each repo:
 for i in $__list1
 do
-	# echo Now-in-$i
+	echo "Count lines in $i"
 	# https://kapeli.com/cheat_sheets/Bash_Test_Operators.docset/Contents/Resources/Documents/index
 	if [ "$i" != "./" ]
 	then
