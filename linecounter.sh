@@ -36,7 +36,7 @@ __list1=`find ./ -maxdepth 1 -type d`
 # Count Lines in each repo:
 for i in $__list1
 do
-	echo "Count lines in $i"
+	echo "Counting lines in $i ..."
 	# https://kapeli.com/cheat_sheets/Bash_Test_Operators.docset/Contents/Resources/Documents/index
 	if [ "$i" != "./" ]
 	then
